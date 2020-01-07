@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <div>In the parent component or top level , I can use $store to getters the state [count] = {{$store.state.count +"ddd"}}</div>
+    <div>In the parent component or top level , I can use $store to getters the state [count] = {{$store.getters.count}}</div>
     <Counter/>
   </div>
 </template>
