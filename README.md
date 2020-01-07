@@ -32,4 +32,6 @@
 
 #### 问题  app.vue 中 不能使用 $store.state.count
 vuex 中 state,mutation 不会暴露给 $store 访问 ，而是根据 $store.getters 和 $store.commit('mutation.onemethod')方式来访问
+####  vuex 编写的简化，一般只用于练习，实际需要分开， 而且  new Store时 用 modules 传入多个组件
+counter.js  Counter.vue可以基础到一个文件Counter.vue,  这样省去actions 等从counter.js 中导出，并在Counter.vue中导入的麻烦， method中 可以直接使用  this.$store.commit('oneMethodInMutations')
 
