@@ -1,29 +1,12 @@
-# vuex_counter
+# vuex_counter 的解读
 
-## Project setup
-```
-npm install
-```
+vuex_counter
+git commit -m "first commit"
+git remote add origin https://github.com/creasy-pita/VuexCounter.git
+git push -u origin master
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Run your tests
-```
-npm run test
-```
+### 问题  app.vue 中 不能使用 $store.state.count
+vuex 中 state,mutation 不会暴露给 $store 访问 ，而是根据 $store.getters 和 $store.commit('mutation.onemethod')方式来访问
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
